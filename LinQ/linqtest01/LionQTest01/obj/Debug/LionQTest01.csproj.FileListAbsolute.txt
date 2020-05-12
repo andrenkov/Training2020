@@ -1,0 +1,9 @@
+C:\Users\Vlad\source\repos\training\linqtest01\LionQTest01\bin\Debug\LionQTest01.exe.config
+C:\Users\Vlad\source\repos\training\linqtest01\LionQTest01\bin\Debug\LionQTest01.exe
+C:\Users\Vlad\source\repos\training\linqtest01\LionQTest01\bin\Debug\LionQTest01.pdb
+C:\Users\Vlad\source\repos\training\linqtest01\LionQTest01\obj\Debug\LionQTest01.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\source\repos\training\linqtest01\LionQTest01\obj\Debug\LionQTest01.exe
+C:\Users\Vlad\source\repos\training\linqtest01\LionQTest01\obj\Debug\LionQTest01.pdb
+C:\Users\Vlad\source\repos\training\linqtest01\LionQTest01\bin\Debug\ObjectDumper.dll
+C:\Users\Vlad\source\repos\training\linqtest01\LionQTest01\obj\Debug\LionQTest01.csproj.CopyComplete
+C:\Users\Vlad\source\repos\training\linqtest01\LionQTest01\obj\Debug\LionQTest01.csprojAssemblyReference.cache

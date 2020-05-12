@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Taximan" Class="TaxiManDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=WS2012;Initial Catalog=Taximan;Persist Security Info=True;User ID=sa" SettingsObjectName="LionQTest01.Properties.Settings" SettingsPropertyName="TaximanConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Customer" Member="Customers">
+    <Type Name="Customer">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerID" Type="System.String" DbType="VarChar(9) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Company" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Contact" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Details" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address1" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Address2" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Province" Type="System.String" DbType="VarChar(31)" CanBeNull="true" />
+      <Column Name="Postal" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PhoneAlt" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="ACC_NUM" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TAX_NUM" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TITLE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="FIRSTNAME" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="MIDINITIAL" Type="System.String" DbType="VarChar(21)" CanBeNull="true" />
+      <Column Name="FAX" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MODIFDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="STAFFLOGID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CC_NUMBER" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="CC_EXPIRY" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="CC_CARDHOLDER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CC_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CC_TEMPLATE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FBALANCE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="EBALANCE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DISCOUNT" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="CLIENT_TYPE_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TRANSDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LAST_INVOICE_NUM" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ACCTEMPLATEID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BrokerID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TYPEPRNINVOICE_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ApplyCC" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="ClassID" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="DriverRating" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DELETED" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="PlanID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HasPlan" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DefaultTemplateID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DeletedBy" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="EffDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TilDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Closed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CustBarCode" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="BillingContact" Type="System.String" DbType="VarChar(51) NOT NULL" CanBeNull="false" />
+      <Column Name="PromptID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ACCGROUP_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BillingType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="InnerRemark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CC_Start" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="CC_IssueNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CC_SecurityCode" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CC_Address" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AccType" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BusinessType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DefaultTripToSR" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="LoadUnloadTime" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AllowAltAddress" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="RPFromPhone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="RPPickupPhone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="VipLabel" Type="System.String" DbType="VarChar(16)" CanBeNull="true" />
+      <Column Name="CustUserReserv" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ShowRegularTrips" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="BillingAccount" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="IsWebAccount" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="SkipZoneLandmarkPricingForAccounts" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="RPAccDestAddrReq" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="MDTAccSignReq" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Association Name="Customer_CustUser" Member="CustUsers" ThisKey="CustomerID" OtherKey="CustomerID" Type="CustUser" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CustUser" Member="CustUsers">
+    <Type Name="CustUser">
+      <Column Name="Name" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="CustomerID" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="ImportantNotes" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="LoyalPointsNum" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CustUserBarCode" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OwnerID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OwnerType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Status" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CellPhone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Email1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HomeAddrID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DriverRating" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CallBack" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="TextBack" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="EmailBack" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Web_LoginID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Web_Password" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Web_Admin" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="CallbackPhone" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EMailbackAddress" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Deleted" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="WebReservation" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="UserDefaultTripToSR" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="LoadUnloadTime" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Apt" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="AllowAltAddress" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PromptID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CanBook4Other" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="VIPNum" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RPFromPhone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="RPPickupPhone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="InnerRemark" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ShowRemarkFlag" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="ShowRegularTrips" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ReceiptBack" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PhoneHome" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Association Name="Customer_CustUser" Member="Customer" ThisKey="CustomerID" OtherKey="CustomerID" Type="Customer" IsForeignKey="true" />
+    </Type>
+    <UpdateFunction FunctionId="FunctionId1">
+      <Argument Parameter="userID" Member="UserID" />
+      <Argument Parameter="ownerID" Member="OwnerID" />
+      <Argument Parameter="ownerType" Member="OwnerType" />
+      <Argument Parameter="customerID" Member="CustomerID" />
+      <Argument Parameter="name" Member="Name" />
+      <Argument Parameter="importantNotes" Member="ImportantNotes" />
+      <Argument Parameter="notes" Member="Notes" />
+      <Argument Parameter="loyalPointsNum" Member="LoyalPointsNum" />
+      <Argument Parameter="custUserBarCode" Member="CustUserBarCode" />
+      <Argument Parameter="status" Member="Status" />
+      <Argument Parameter="title" Member="Title" />
+      <Argument Parameter="firstName" Member="FirstName" />
+      <Argument Parameter="lastName" Member="LastName" />
+      <Argument Parameter="phone" Member="Phone" />
+      <Argument Parameter="fax" Member="Fax" />
+      <Argument Parameter="cellPhone" Member="CellPhone" />
+      <Argument Parameter="email1" Member="Email1" />
+      <Argument Parameter="email2" Member="Email2" />
+      <Argument Parameter="homeAddrID" Member="HomeAddrID" />
+      <Argument Parameter="driverRating" Member="DriverRating" />
+      <Argument Parameter="priority" Member="Priority" />
+      <Argument Parameter="callBack" Member="CallBack" />
+      <Argument Parameter="textBack" Member="TextBack" />
+      <Argument Parameter="emailBack" Member="EmailBack" />
+      <Argument Parameter="position" Member="Position" />
+      <Argument Parameter="web_LoginID" Member="Web_LoginID" />
+      <Argument Parameter="web_Password" Member="Web_Password" />
+      <Argument Parameter="webReservation" Member="WebReservation" />
+      <Argument Parameter="userDefaultTripToSR" Member="UserDefaultTripToSR" />
+      <Argument Parameter="allowAltAddress" Member="AllowAltAddress" />
+      <Argument Parameter="canBook4Other" Member="CanBook4Other" />
+      <Argument Parameter="vIPNum" Member="VIPNum" />
+      <Argument Parameter="showRemarkFlag" Member="ShowRemarkFlag" />
+      <Argument Parameter="showRegularTrips" Member="ShowRegularTrips" />
+      <Argument Parameter="receiptBack" Member="ReceiptBack" />
+    </UpdateFunction>
+  </Table>
+  <Function Id="FunctionId1" Name="dbo.SaveCustUser" Method="SaveCustUser">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="OwnerID" Parameter="ownerID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="OwnerType" Parameter="ownerType" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CustomerID" Parameter="customerID" Type="System.String" DbType="VarChar(9)" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="ImportantNotes" Parameter="importantNotes" Type="System.String" DbType="VarChar(255)" />
+    <Parameter Name="Notes" Parameter="notes" Type="System.String" DbType="VarChar(255)" />
+    <Parameter Name="LoyalPointsNum" Parameter="loyalPointsNum" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="CustUserBarCode" Parameter="custUserBarCode" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="Status" Parameter="status" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="Title" Parameter="title" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="FirstName" Parameter="firstName" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="LastName" Parameter="lastName" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="Phone" Parameter="phone" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Fax" Parameter="fax" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="CellPhone" Parameter="cellPhone" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Email1" Parameter="email1" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Email2" Parameter="email2" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="HomeAddrID" Parameter="homeAddrID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DriverRating" Parameter="driverRating" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Priority" Parameter="priority" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="CallBack" Parameter="callBack" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="TextBack" Parameter="textBack" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="EmailBack" Parameter="emailBack" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="Position" Parameter="position" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="Web_LoginID" Parameter="web_LoginID" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Web_Password" Parameter="web_Password" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="WebReservation" Parameter="webReservation" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="CustPhoneError" Parameter="custPhoneError" Type="System.String" DbType="VarChar(100)" Direction="InOut" />
+    <Parameter Name="UserDefaultTripToSR" Parameter="userDefaultTripToSR" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="UserLoadUnloadTime" Parameter="userLoadUnloadTime" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AllowAltAddress" Parameter="allowAltAddress" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="CanBook4Other" Parameter="canBook4Other" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="VIPNum" Parameter="vIPNum" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ShowRemarkFlag" Parameter="showRemarkFlag" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="ShowRegularTrips" Parameter="showRegularTrips" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="ReceiptBack" Parameter="receiptBack" Type="System.Char" DbType="Char(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

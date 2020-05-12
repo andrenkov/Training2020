@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 16" name="TaxiManDB">
+  <DataContextMoniker Name="/TaxiManDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0c4ab8fb-65fb-4b8c-94d2-3f1ca8bb1a9d" absoluteBounds="0.75, 0.75, 2, 15.039695638020834">
+      <DataClassMoniker Name="/TaxiManDBDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eca98c19-54df-498f-9185-fc41cc9ccc0a" absoluteBounds="0.765, 1.21, 1.9700000000000002, 14.479695638020832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dc5cc30f-d718-4334-b656-4740ebb558e8" absoluteBounds="3.75, 0.75, 2, 9.8475569661458326">
+      <DataClassMoniker Name="/TaxiManDBDataContext/CustUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb8d2faf-eb69-47e2-80e4-5b4fc810f306" absoluteBounds="3.765, 1.21, 1.9700000000000002, 9.2875569661458321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 5.67377848307292); (3.75 : 5.67377848307292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TaxiManDBDataContext/Customer/Customer_CustUser" />
+      <nodes>
+        <classShapeMoniker Id="0c4ab8fb-65fb-4b8c-94d2-3f1ca8bb1a9d" />
+        <classShapeMoniker Id="dc5cc30f-d718-4334-b656-4740ebb558e8" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
