@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SimpleASPNorthwind
+namespace ASP.NET_01_SQLdatasource
 {
 
 

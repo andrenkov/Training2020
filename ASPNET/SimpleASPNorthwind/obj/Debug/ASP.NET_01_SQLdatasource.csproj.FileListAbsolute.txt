@@ -219,9 +219,9 @@ E:\A_Project\!Training\Training2020\ASPNET\WebApplication1\obj\Debug\ASP.NET_01_
 E:\A_Project\!Training\Training2020\ASPNET\WebApplication1\obj\Debug\ASP.NET_01_SQLdatasource.csproj.CopyComplete
 E:\A_Project\!Training\Training2020\ASPNET\WebApplication1\obj\Debug\WebApplication1.dll
 E:\A_Project\!Training\Training2020\ASPNET\WebApplication1\obj\Debug\WebApplication1.pdb
-E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\bin\WebApplication1.dll.config
-E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\bin\WebApplication1.dll
-E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\bin\WebApplication1.pdb
+E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\bin\NorthwindDS.dll.config
+E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\bin\NorthwindDS.dll
+E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\bin\NorthwindDS.pdb
 E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\bin\roslyn\csc.exe
 E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\bin\roslyn\csc.exe.config
 E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\bin\roslyn\csc.rsp
@@ -288,7 +288,8 @@ E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\bin\Newtonsoft.Jso
 E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\bin\Antlr3.Runtime.pdb
 E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\bin\Microsoft.AspNet.FriendlyUrls.xml
 E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\obj\Debug\ASP.NET_01_SQLdatasource.csprojAssemblyReference.cache
 E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\obj\Debug\ASP.NET_01_SQLdatasource.csproj.CoreCompileInputs.cache
 E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\obj\Debug\ASP.NET_01_SQLdatasource.csproj.CopyComplete
-E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\obj\Debug\WebApplication1.dll
-E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\obj\Debug\WebApplication1.pdb
+E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\obj\Debug\NorthwindDS.dll
+E:\A_Project\!Training\Training2020\ASPNET\SimpleASPNorthwind\obj\Debug\NorthwindDS.pdb
