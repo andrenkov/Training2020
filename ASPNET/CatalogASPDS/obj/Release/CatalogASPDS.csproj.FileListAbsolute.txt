@@ -71,3 +71,4 @@ E:\A_Project\!Training\Training2020\ASPNET\CatalogASPDS\obj\Release\CatalogASPDS
 E:\A_Project\!Training\Training2020\ASPNET\CatalogASPDS\obj\Release\CatalogASPDS.csproj.CopyComplete
 E:\A_Project\!Training\Training2020\ASPNET\CatalogASPDS\obj\Release\CatalogASPDS.dll
 E:\A_Project\!Training\Training2020\ASPNET\CatalogASPDS\obj\Release\CatalogASPDS.pdb
+E:\A_Project\!Training\Training2020\ASPNET\CatalogASPDS\obj\Release\CatalogASPDS.csprojAssemblyReference.cache
