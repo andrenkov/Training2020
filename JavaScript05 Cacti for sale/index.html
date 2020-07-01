@@ -9,7 +9,7 @@
     <!-- <link rel="stylesheet" href="/fontawesome-free-5.13.0-web/css/all.min.css" /> -->
     <script src="https://kit.fontawesome.com/20c7148b30.js" crossorigin="anonymous"></script>
     <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="shopping_cart.css" />
 </head>
 
 <body>
@@ -24,21 +24,77 @@
                 <span class="nav-icon">
                     <i class="fas fa-cart-plus"></i>
                 </span>
+                <div class="cart-items">0</div>
             </div>
         </div>
     </nav>
     <!-- end of nav bar -->
 
     <!-- background -->
-    <header class="bcd">
+    <header class="bcg">
         <div class="banner">
             <h1 class="banner-title">cacti collection</h1>
             <button class="banner-btn">shop now</button>
         </div>
     </header>
-    <!-- end background -->
+    <!-- end of background -->
 
-    <script src="app.js"></script>
+    <!-- cacti -->
+    <section class="cacti">
+        <div class="section-title">
+            <h2>my cacti</h2>
+        </div>
+        <div class="cacti-center">
+            <!-- one cactus -->
+            <!-- <article class="cactus">
+                <div class="img-container">
+                    <img class="cactus-img" src="./images/product-1.JPG" alt="cactus">
+                    <button class="add-to-cart-btn" data-id="1">
+                        <i class="fas fa-shopping-cart"></i>
+                        add to cart
+                    </button>
+                </div>
+                <h3>Astrophytum capricorne</h3>
+                <h4>$15</h4>
+            </article> -->
+            <!-- end of one cactus -->
+        </div>
+    </section>
+    <!-- end cacti -->
+
+    <!-- cart-->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span clas="close-cart">
+                <i class="fas fa-window-close" ></i>
+            </span>
+            <h2>your cart</h2>
+            <div class="cart-content">
+                <!-- cart item-->
+                <div class="cart-item">
+                    <img src="./images/product-1.JPG" alt="cactus">
+                    <div>
+                        <h4>Astrphytum capricorne</h4>
+                        <h5>$15</h5>
+                        <span class="remove_item">remove</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-chevron-up"> </i>
+                        <p class="item-amount">1</p>
+                        <i class="fas fa-chevron-down"> </i>
+                    </div>
+                </div>
+                <!-- end of cart item-->
+            </div>
+            <div class="cart-footer">
+                <h3>your total : $ <span class="cart=total">0</span> </h3>
+                <button class="clear-cart remove-item-btn">clear cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- end of cart-->
+
+    <script src="shopping_cart.js "></script>
 </body>
 
 </html>

@@ -70,7 +70,7 @@ body {
 
 /* --------------- background ---------------- */
 
-.hero {
+.bcd {
     min-height: calc(100vh - 60px);
     background: url("./images/bcg.jpeg") center/cover no-repeat;
     display: flex;
@@ -110,7 +110,7 @@ body {
 }
 
 
-/* --------------- End of Hero ---------------- */
+/* --------------- End of bcd ---------------- */
 
 
 /* --------------- Products ---------------- */

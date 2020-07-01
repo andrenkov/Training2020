@@ -1,0 +1,99 @@
+{
+    "items": [{
+            "sys": { "id": "1" },
+            "fields": {
+                "species": "Astrophytum capricorne crassispinoides",
+                "price": 20.00,
+                "image": { "fields": { "file": { "url": "./images/product-1.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "2" },
+            "fields": {
+                "species": "Astrophytum myriostigma nudum",
+                "price": 15.00,
+                "image": { "fields": { "file": { "url": "./images/product-2.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "3" },
+            "fields": {
+                "species": "Discocactus araneispinus",
+                "price": 20.00,
+                "image": { "fields": { "file": { "url": "./images/product-3.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "4" },
+            "fields": {
+                "species": "Echinocereus rigidissimus ssp. rubispinus",
+                "price": 7.00,
+                "image": { "fields": { "file": { "url": "./images/product-4.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "5" },
+            "fields": {
+                "species": "Echinocereus triglochidiatus JRT171",
+                "price": 15.00,
+                "image": { "fields": { "file": { "url": "./images/product-5.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "6" },
+            "fields": {
+                "species": "Glandulicactus unciatus",
+                "price": 10.00,
+                "image": { "fields": { "file": { "url": "./images/product-6.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "7" },
+            "fields": {
+                "species": "Gymnocalycium cardenasianum",
+                "price": 50.00,
+                "image": { "fields": { "file": { "url": "./images/product-7.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "8" },
+            "fields": {
+                "species": "Gymnocalycium spegazzinii ssp. punillense",
+                "price": 10.00,
+                "image": { "fields": { "file": { "url": "./images/product-8.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "9" },
+            "fields": {
+                "species": "Melocactus curvispinus",
+                "price": 25.00,
+                "image": { "fields": { "file": { "url": "./images/product-9.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "10" },
+            "fields": {
+                "species": "Parodia maassii suprema KK834",
+                "price": 50.00,
+                "image": { "fields": { "file": { "url": "./images/product-10.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "11" },
+            "fields": {
+                "species": "Sclerocactus VA27",
+                "price": 50.00,
+                "image": { "fields": { "file": { "url": "./images/product-11.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "12" },
+            "fields": {
+                "species": "Turbinicarpus lophophoroides",
+                "price": 15.00,
+                "image": { "fields": { "file": { "url": "./images/product-12.jpg" } } }
+            }
+        }
+    ]
+}
