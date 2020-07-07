@@ -246,11 +246,11 @@ body {
     transform: translateX(100%);
 }
 
-.showCart {
+.showCartContent {
     transform: translateX(0);
 }
 
-.transparentBcg {
+.transparentBackground {
     visibility: visible;
 }
 
@@ -303,7 +303,7 @@ body {
     letter-spacing: var(--mainSpacing);
 }
 
-.item-amount {
+.item-qty {
     text-align: center;
 }
 
