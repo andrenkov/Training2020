@@ -1,3 +1,11 @@
+//get entries from Contentful
+const contClient = contentful.createClient({
+        space: "l5e7bcz35uqz",
+        accessToken: "ykoaIJSqAvF9im_RwNBgb3OVg-53k_oJWAFSTv83STk"
+    })
+    //console.log(contClient);
+    //contClient.getEntries().then((entry) => console.log(entry)).catch(console.error)
+
 //vars
 const cartBtn = document.querySelector(".cart-btn");
 const closeCartBtn = document.querySelector(".close-cart");
@@ -19,9 +27,18 @@ let buttonsDOM = [];
 class CactiList {
     async getCacti() { //async for Ajax request    
         try {
-            let result = await fetch("cacti.json"); //old way
-            let data = await result.json();
-            let cacti = data.items;
+            //reading local json 
+            // let result = await fetch("cacti.json"); //old way
+            // let data = await result.json();
+            // let cacti = data.items;
+
+            //load from contetful
+            let contEntries = await contClient.getEntries({
+                content_type: "cactiCatalog",
+                order: "fields.species" //for ordering by https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/search-parameters/order
+            });
+            let cacti = contEntries.items;
+
             cacti = cacti.map(item => {
                 const { species, price } = item.fields;
                 const { id } = item.sys;

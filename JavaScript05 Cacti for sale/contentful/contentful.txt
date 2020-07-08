@@ -1,0 +1,11 @@
+https://contentful.github.io/contentful.js/contentful/7.14.5/
+
+catalog
+space ID: 
+l5e7bcz35uqz
+
+Content delivery API - access tocken:
+ykoaIJSqAvF9im_RwNBgb3OVg-53k_oJWAFSTv83STk
+
+Content preview API - access tocken:
+TXoqf_Q-2fWN3OlJ-M1hPpaZ6n57vObectAXmrYQDdA
