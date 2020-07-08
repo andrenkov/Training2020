@@ -69,6 +69,7 @@ class CactiPage {
             let inCart = cart.find(item => item.id === id);
             if (inCart) {
                 button.innerText = "In Cart";
+                //$(button).text('In Cart'); //use jquery does not work ?
                 button.disabled = true;
             }
             button.addEventListener("click", event => {
@@ -123,7 +124,7 @@ class CactiPage {
                         <div>
                             <h4>${item.species}</h4>
                             <h5>$${item.price}</h5>
-                            <span class="remove_item" data-id=${item.id}>remove</span>
+                            <span class="remove-item" data-id=${item.id}>remove</span>
                         </div>
                         <div>
                             <i class="fas fa-chevron-up" data-id=${item.id}> </i>
@@ -157,7 +158,68 @@ class CactiPage {
         CartDOM.classList.remove("showCartContent");
     }
 
-}
+    cartUpdateFunc() { //cart logic
+        clearCartBtn.addEventListener("click", () => {
+                this.ClearCartContent(); //to reference the  CactiPage class, but the button
+            })
+            //cart functionality
+            //use events bubbling instead of adding event listener for each element
+        cartContent.addEventListener("click", event => {
+            //console.log(event.target);
+            //action by class name
+            if (event.target.classList.contains("remove-item")) {
+                let removeItem = event.target;
+                let id = removeItem.dataset.id;
+                cartContent.removeChild(removeItem.parentElement.parentElement); //parent element - two parents up (div is first parent)
+                this.removeCactusFromCart(id);
+            } else if (event.target.classList.contains("fa-chevron-up")) {
+                let addQty = event.target;
+                let id = addQty.dataset.id;
+                let tempCactus = cart.find(item => item.id === id);
+                tempCactus.qty = tempCactus.qty + 1;
+                StorageLocal.saveCart(cart);
+                this.setCartValues(cart);
+                addQty.nextElementSibling.innerText = tempCactus.qty;
+            } else if (event.target.classList.contains("fa-chevron-down")) {
+                let deductQty = event.target;
+                let id = deductQty.dataset.id;
+                let tempCactus = cart.find(item => item.id === id);
+                tempCactus.qty = tempCactus.qty - 1;
+                if (tempCactus.qty > 0) {
+                    StorageLocal.saveCart(cart);
+                    this.setCartValues(cart);
+                    deductQty.previousElementSibling.innerText = tempCactus.qty;
+                } else {
+                    cartContent.removeChild(deductQty.parentElement.parentElement);
+                    this.removeCactusFromCart(id);
+                }
+            }
+        })
+    }
+
+    ClearCartContent() {
+        let cartCacti = cart.map(item => item.id); //getting array of IDs of the cart items
+        cartCacti.forEach(id => this.removeCactusFromCart(id));
+        while (cartContent.children.length > 0) {
+            cartContent.removeChild(cartContent.children[0]); //while there's a child on the DOM element - remove it 
+        }
+        this.HideCartContent();
+    }
+
+    removeCactusFromCart(id) {
+        cart = cart.filter(item => item.id !== id); //new cart excluding the item with this "id 
+        this.setCartValues(cart);
+        StorageLocal.saveCart(cart);
+        let button = this.GetOneButton(id);
+        button.disabled = false;
+        button.innerHTML = `<i class="fas fa-shopping-cart"></i>add to cart`;
+    }
+
+    GetOneButton(id) {
+        return buttonsDOM.find(button => button.dataset.id === id);
+    }
+
+} //End class CactiPage
 
 //local storage
 class StorageLocal {
@@ -194,5 +256,6 @@ document.addEventListener("DOMContentLoaded", () => {
         StorageLocal.saveCacti(cacti); //save all cacti in the local storage fro a quick access
     }).then(() => {
         cactiPage.getCartButtons();
+        cactiPage.cartUpdateFunc(); //set logic for the cart
     });
 });
