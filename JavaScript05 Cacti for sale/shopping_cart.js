@@ -1,7 +1,7 @@
 //get entries from Contentful
 const contClient = contentful.createClient({
-        space: "l5e7bcz35uqz",
-        accessToken: "ykoaIJSqAvF9im_RwNBgb3OVg-53k_oJWAFSTv83STk"
+        space: "space name",
+        accessToken: "token"
     })
     //console.log(contClient);
     //contClient.getEntries().then((entry) => console.log(entry)).catch(console.error)
